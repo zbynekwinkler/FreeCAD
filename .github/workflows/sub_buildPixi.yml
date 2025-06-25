@@ -137,7 +137,7 @@ jobs:
 
     - name: CMake Build
       run: |
-        pixi run build
+        pixi run build-release
 
     - name: Print ccache statistics after Build
       run: |
@@ -174,7 +174,7 @@ jobs:
 
     - name: CMake Install
       run: |
-        pixi run install
+        pixi run install-release
 
     - name: FreeCAD CLI tests on install
       if: runner.os != 'Windows'
