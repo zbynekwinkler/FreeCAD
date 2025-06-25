@@ -54,7 +54,7 @@ jobs:
       CCACHE_MAXSIZE: 1G
       CCACHE_COMPRESS: true
       CCACHE_COMPRESSLEVEL: 5
-      builddir: ${{ github.workspace }}/build/
+      builddir: ${{ github.workspace }}/build/release/
       cacheKey: pixi-${{ matrix.os }}
       logdir: ${{ github.workspace }}/logs/
       reportdir: ${{ github.workspace }}/report/
